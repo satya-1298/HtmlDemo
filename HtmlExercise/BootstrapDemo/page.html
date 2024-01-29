@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .hoverelement:hover {
+            color: rgb(246, 147, 48);
+        }
+
+        .bg-color {
+            background-color: white;
+        }
+
+        .btn-re {
+            background-color: rgb(45, 45, 112);
+            color: white;
+
+        }
+
+        .btn-re:hover {
+            background-color: rgb(113, 113, 192);
+        }
+
+        .container-s {
+            height: 150px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .btn-learn {
+            border: 1px solid rgb(216, 105, 14);
+            color: rgb(216, 105, 14);
+            width: 15ch;
+            height: 5ch;
+        }
+
+        .btn-learn:hover {
+            border: 1px solid rgb(218, 142, 81);
+            background-color: rgb(241, 124, 35);
+            color: rgb(100, 245, 241);
+
+        }
+
+        .vl {
+            border-left: 0.5px solid rgb(201, 201, 201);
+            height: 110px;
+        }
+
+        .carousel-item.active {
+            left: 0;
+            transition: all 0.2s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class=" d-flex">
+            <!-- NavBar -->
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid  col-sm-3 " style=" width: 80%; ">
+                    <a class="navbar-brand col-sm" href="#" style="margin-right: 2ch;">
+                        <img src="pena4.jpeg" alt="Bootstrap" width="210px" height="55px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse row " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 col bg-color">
+                            <li class="nav-item dropdown col-sm-2">
+                                <a class="nav-link dropdown-toggle hoverelement" role="button"
+                                    href="https://www.pena4.com/how-we-help" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    How We Help
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/staffing">HealthCare
+                                            Staffing</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/coding">Compliance</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/health-information">Health
+                                            Information Mangement</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/revenue-cycle">Revenue
+                                            Cycle Service</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item col-2">
+                                <a class="nav-link hoverelement" href="https://www.pena4.com/pena4-service">Who We
+                                    Serve</a>
+                            </li>
+                            <li class="nav-item dropdown col">
+                                <a class="nav-link dropdown-toggle hoverelement" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/coding">Medical Coding</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/medical-billing">Medical
+                                            Billing</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/audits_assessments">Coding
+                                            Audits &amp; Assessments</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/coris">Comprehensive
+                                            Outpatient Integrity Services (CORIS)</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/consulting">Consulting</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/cdi">CDI</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/cdm">CDM</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/education">Education</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/staffing">HealthCare
+                                            Staffing</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/virtual-assistant">Virtual
+                                            Assistant</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/it-solutions">IT</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/hr">HR</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/finance">Finance</a></li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/customer-care">Customer
+                                            Care</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown col">
+                                <a class="nav-link dropdown-toggle hoverelement" href="https://www.pena4.com/about"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/pena4-team">Our Team</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://www.pena4.com/upcoming-events">Events</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item col">
+                                <a class="nav-link hoverelement " href="https://www.pena4.com/contact">Contact</a>
+                            </li>
+                            <li class="nav-item col">
+                                <a class="nav-link hoverelement " href="https://www.pena4.com/pena4-canada">Canada</a>
+                            </li>
+                            <li class="nav-item col">
+                                <a class="nav-link hoverelement" href="https://blog.pena4.com/blog">Articles</a>
+                            </li>
+                            <li class="nav-item dropdown col">
+                                <a class="nav-link dropdown-toggle hoverelement"
+                                    href="https://blog.pena4.com/case-studies" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Case Studies
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item"
+                                            href="https://blog.pena4.com/case-studies/pena4s-resilience-in-reviving-nyc-health-system">Pena4's
+                                            Resilience in Reviving a NYC Health Organization</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://blog.pena4.com/case-studies/pena4-helps-sustain-medical-coding-operations-during-global-disruption">Pena4
+                                            Helps Sustain Medical Coding Operations During Global Disruption</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class=" row " style="width: 15%;">
+                    <div class="row" style="padding-bottom: 10px;">
+                        <button class="btn btn-re">Request a Consulation</button>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <font class="hoverelement">(610)435-5724</font>
+                    </div>
+                    <div class="row">
+                        <input type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+
+        <!-- Greetings -->
+        <div style="
+         height: 50ch; width: 100%;
+          background-image:url(pexels-ono-kosuki-5647270.jpg);
+           background-size: cover;">
+            <div>
+                <div class="d-flex justify-content-center" style=" padding-top: 15ch; ">
+                    <p style="color: rgb(231, 93, 43); font-size: 25px;"><b>WELCOME TO PENA4</b></p><br>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h2 style="color: #faf9f9;"><b>Solutions to Protect and Grow Your Business</b></h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p style="color: #faf9f9; font-size: 20px;"><b>Leverage the power of outsourced
+                            strategies and staffing services to drive
+                            efficiency, compliance, and bottom-line dollars.</b> </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary">Revenue Cycle Services</button>
+                    <button style="margin-left: 7ch; color: #faf9f9; background-color: orangered;"
+                        class="btn btn-warning ">HealthCare Staffing</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Heading -->
+        <div>
+            <p class="h1 d-flex justify-content-center" style="padding: 2ch; color: rgb(10, 10, 56);">How Pena4 can help
+                you...</p>
+        </div>
+
+        < <div class=" d-flex justify-content-center">
+            <div class="grid gap-0 column-gap-3"
+                style="width:70%; padding: 5ch;  background-color: rgb(96, 162, 220); ">
+                <div class="p-2 g-col-6">
+                    <div class="d-flex flex-row">
+                        <div>
+                            <img src="https://www.pena4.com/hubfs/Cost_savings.png" width="90ch" height="70ch">
+                        </div>
+                        <div>
+                            <p class="h2" style="color: white;">LOWER COSTS</p>
+                            <p>Tap into strategic virtual H.I.M. and HealthCare staffing solutions that elevate cost
+                                savings
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 g-col-6">
+                    <div class="d-flex flex-row">
+                        <div>
+                            <img src="https://www.pena4.com/hubfs/increase_revenue.png" width="90ch" height="70ch">
+                        </div>
+                        <div>
+                            <p class="h2" style="color: white;">INCREASE REVENUE</p>
+                            <p> Eliminate workforce redundancies to expand revenue opportunities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 g-col-6">
+                    <div class="d-flex flex-row">
+                        <div>
+                            <img src="https://www.pena4.com/hubfs/compliance.png" width="90ch" height="70ch">
+                        </div>
+                        <div>
+                            <p class="h2" style="color: white;">IMPROVE COMPLIANCE</p>
+                            <p>Maintain the highest compliance standards within your industry </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 g-col-6">
+                    <div class="d-flex flex-row">
+                        <div>
+                            <img src="https://www.pena4.com/hubfs/productivity.png" width="90ch" height="70ch">
+                        </div>
+                        <div>
+                            <p class="h2" style="color: white;">ELEVATE PRODUCTIVITY</p>
+                            <p>Augment existing workforce to accelerate accurate output and productivity. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 g-col-6">
+                    <div class="d-flex flex-row">
+                        <div>
+                            <img src="https://www.pena4.com/hubfs/capabilities.png" width="90ch" height="70ch">
+                        </div>
+                        <div>
+                            <p class="h2" style="color: white;">EXPAND CAPABILITIES</p>
+                            <p> Leverage outsourced services to extend current client offerings and capabilities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 g-col-6">
+                    <div class="d-flex flex-row">
+                        <div>
+                            <img src="https://www.pena4.com/hubfs/risk.png" width="90ch" height="70ch">
+                        </div>
+                        <div>
+                            <p class="h2" style="color: white;"> MINIMIZE RISK</p>
+                            <p>Eliminate hiring and onboarding risks associated with full-time employees</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    <div class="d-flex justify-content-center" style="padding: 2ch;">
+        <a href="https://www.pena4.com/how-we-help"><button class="btn btn-learn ">learn more</button></a>
+    </div>
+    <div class="d-flex justify-content-around"
+        style="padding: 2ch; margin-top: 5ch; background-color: rgb(236, 234, 234);">
+        <div>
+            <img src="https://www.pena4.com/hs-fs/hubfs/HopkinsCME_logo_lrg.png?width=1500&height=318&name=HopkinsCME_logo_lrg.png"
+                width="150px" height="70px">
+        </div>
+        <div class="vl"></div>
+        <div>
+            <img src="https://www.pena4.com/hs-fs/hubfs/client-logo-mount-sinai@2x-7464d5aeb22c072fa002f115d289c020281863adbb18eeffa5a16d0113486a8b.png?width=533&height=194&name=client-logo-mount-sinai@2x-7464d5aeb22c072fa002f115d289c020281863adbb18eeffa5a16d0113486a8b.png"
+                width="150px" height="90px">
+        </div>
+        <div class="vl"></div>
+
+        <div>
+            <img src="https://www.pena4.com/hs-fs/hubfs/Allstate-Logo.wine_.png?width=2344&height=543&name=Allstate-Logo.wine_.png"
+                width="150px" height="80px">
+        </div>
+        <div class="vl"></div>
+
+        <div>
+            <img src="https://www.pena4.com/hs-fs/hubfs/indra-energy.png?width=2426&height=1332&name=indra-energy.png"
+                width="150px" height="80px">
+        </div>
+    </div>
+
+    <!-- carousel -->
+    <div style="padding: 3ch;border-bottom: 5ch;">
+        <div id="carouselExampleRide" class="carousel slide container" data-bs-ride="carousel"
+            style="width: 70% ;background-color: rgb(255, 251, 251);">
+            <div class="carousel-inner">
+                <!-- First Slide Content -->
+                <div class="carousel-item active">
+                    <div class=" d-flex flex-row d-block w-100">
+                        <div style="padding: 3ch;">
+                            <img src="https://www.pena4.com/hubfs/Pena4%20H.I.M.%20Leaders.jpg" width="500px"
+                                height="400px" alt="First slide">
+                        </div>
+                        <div style="padding: 3ch;">
+                            <p class="h1"> Who We Serve</p>
+                            <p class="h3">Lower Costs, Drive ROI</p>
+                            <p>Pena4 helps partners across multiple verticals and industries lower hiring risk,
+                                expedite talent sourcing, and protect profit margins across every phase of the
+                                revenue
+                                cycle.
+                                Our extensive service strategies make us an ideal resource for: </p>
+                            <ul>
+                                <li>Human Resources</li>
+                                <li> H.I.M. Leaders</li>
+                                <li>RCS Leaders</li>
+                            </ul>
+                            <div style="padding: 2ch;">
+                                <a href="https://www.pena4.com/how-we-help"><button class="btn btn-learn ">learn
+                                        more</button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Slide Content -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-row d-block w-100">
+                        <div style="padding: 2ch;">
+                            <img src="https://8888513.fs1.hubspotusercontent-na1.net/hubfs/8888513/hub_generated/resized/3aced22c-a386-4266-9570-58eb3e9d9a52.jpeg"
+                                width="" alt="Second slide">
+                        </div>
+                        <div style="padding: 10ch;">
+                            <p class="h1">Virtual Assistants</p>
+                            <p>Pena4’s Virtual Assistant capabilities help large organizations, solopreneurs,
+                                and even individuals access skilled, trained, and professional
+                                Virtual Assistants who perform a wide range of tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button style="color: black;" class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center  "
+        style="border-top: 5ch; background-color: rgb(246, 244, 244);height: 520px;">
+        <div class="d-flex flex-row " style="padding: 8ch;">
+            <div style="margin-left: 20ch;">
+                <img src="https://www.pena4.com/hubfs/krakenimages-376KN_ISplE-unsplash.jpg" width="500px"
+                    height="400px" >
+            </div>
+            <div style="padding: 4ch;">
+                <p class="h1">Testimonials</p>
+                <p> Why Clients Choose Pena4</p>
+
+                <p class="h3"> What our customers have to say...</p>
+                <div>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide  " style="width: 70%; ">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000" style="padding: 4ch; ">
+                                <!-- First Slide Content -->
+                                <p class="h2 d-flex justify-content-center">Mack B Oliver</p>
+                                <small class="d-flex justify-content-center"
+                                    style="color: rgb(158, 156, 156);">CEO</small>
+                                <p style="padding: 2ch;">
+                                    We were very fortunate in selecting Pena4 –
+                                    they are a perfect fit for our very complex coding environment. The excellent
+                                    coding of
+                                    the organization has had a positive impact of $2 million. </p>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000" style="padding: 4ch; ">
+                                <!-- Second Slide Content -->
+                                <p class="h2 d-flex justify-content-center">Barbara siegal</p>
+                                <small class="d-flex justify-content-center"
+                                    style="color: rgb(158, 156, 156);">Director,Health Information Mangement</small>
+                                <p class="d-flex justify-content-center" style="padding: 2ch;">Pena4 provides us
+                                    with professionals who are knowledgeable, flexible, and innovative.&nbsp;
+                                    Our process improvement initiatives
+                                    are successful thanks to their experience and expertise.</p>
+                            </div>
+                            <div class="carousel-item" style="padding: 4ch; ">
+                                <!-- Third Slide Content -->
+                                <p class="h2 d-flex justify-content-center">Lynn Wall</p>
+                                <small class="d-flex justify-content-center" style="color:rgb(158, 156, 156);">RHIT,CCS
+                                    Director Corporate Coding</small>
+                                <p class="d-flex justify-content-center" style="padding: 2ch;">Pena4 employs highly
+                                    qualified coding staff and delivers an exceptional level of accuracy.&nbsp;
+                                    They are responsive to our needs and live up to their guarantees.</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="card " style="background-color:  rgba(34, 47, 89, 1) ; margin-top: 10ch;">
+        <div class="d-flex flex-row" style="padding: 5ch;">
+            <p class="h4" style="color: white; margin-left: 7ch;">Schedule a call with the Pena4 team today</p>
+            <a
+                href="https://www.pena4.com/contact?hsCtaTracking=df1fc9ef-79e9-40bc-86cd-6a6b8bb212b2%7C8565df4e-202e-4e6e-884a-f2bbd18a1f09"><button
+                    class="btn"
+                    style="color: white ; border:1px solid white; border-radius: 15px; margin-left: 7ch;">Contact</button></a>
+        </div>
+    </div>
+
+    <!-- links -->
+    <div style=" background-color: #f5f2f2;">
+        <div class="d-flex justify-content-center justify-content-around" style="padding: 5ch;">
+            <div>
+                <p>How We Help</p>
+                <p> Who We Serve</p>
+                <p>Services</p>
+                <p>About</p>
+                <p>Contact</p>
+                <p>Articles</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div style="padding: 5ch;">
+                <p>LATEST ARTICLE</p>
+                <p class="card" style="width: 330px;color: blue; padding: 2.5ch;"><b>Pena4's Commitment to
+                        Community: A Tradition of Giving Back</b></p>
+            </div>
+            <div class="d-flex flex-column">
+                <a href="https://www.facebook.com/Pena4/"> <img src="icons8-facebook.svg"></a>
+                <a href="https://www.linkedin.com/company/pena4-inc/"><img src="icons8-linkedin-logo.svg"></a>
+                <a href="https://twitter.com/pena4inc"><img src="icons8-twitter.svg"></a>
+            </div>
+
+            <div>
+                <p> GET IN TOUCH</p>
+                <a href="https://www.pena4.com/">www.pena4.com</a>
+                <p>5290 W. Coplay Rd, Suite 100,
+                    Whitehall PA
+                </p>
+                <p>(610) 435-5724
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-body-secondary d-flex justify-content-center"
+        style="padding: 2ch; background-color: #fffdfd;">
+
+        <p>© 2023 Pena4. All Rights Reserved.</p>
+    </div>
+    </div>
+</body>
+
+</html>

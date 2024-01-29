@@ -1,0 +1,12 @@
+.pexel{
+    display: flex;
+    /* background-color: blue; */
+    flex-direction: column;
+}
+.container{
+    background-color: rgb(179, 237, 237);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
